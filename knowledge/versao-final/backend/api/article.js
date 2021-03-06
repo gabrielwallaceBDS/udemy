@@ -37,7 +37,7 @@ module.exports = app => {
                 .where({ id: req.params.id }).del()
             
             try {
-                existsOrError(rowsDeleted, 'Artigo não foi encontrado.')
+                existsOrError(rowsDeleted, 'Artigo não foiie encontrado.')
             } catch(msg) {
                 return res.status(400).send(msg)    
             }
